@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "119673587074",
+    "project_id": "todquest-3523c",
+    "storage_bucket": "todquest-3523c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:119673587074:android:ec7fd1e0caf8ca84b1bb9b",
+        "android_client_info": {
+          "package_name": "com.example.todquest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "119673587074-smuib8lue194k251i9thurc1ba9e5177.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNtheC4LYYJmv13YthGOQZeDORXDVv8Wg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "119673587074-smuib8lue194k251i9thurc1ba9e5177.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
