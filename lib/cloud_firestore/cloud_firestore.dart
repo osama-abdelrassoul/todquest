@@ -72,7 +72,7 @@ class CloudFirestore {
         users.add(User.fromMap(element.data()));
       }
     });
-    print(users);
+
     return users;
   }
 }

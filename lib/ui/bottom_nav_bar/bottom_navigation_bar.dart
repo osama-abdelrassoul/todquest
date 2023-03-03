@@ -5,6 +5,7 @@ import 'package:todquest/features/home/screens/category_screen.dart';
 import 'package:todquest/features/search/screens/search_screen.dart';
 import 'package:todquest/features/ui_task/screens/ui_task_screen.dart';
 import '../../features/auth/login/bloc/login_bloc.dart';
+import '../../features/files_task/screens/files_task_screen.dart';
 
 class BottomNavBar extends StatefulWidget {
   static const String routeName = '/actual-home';
@@ -21,7 +22,7 @@ class BottomNavBar extends StatefulWidget {
 }
 
 class BottomNavBarState extends State<BottomNavBar> {
-  int _page = 2;
+  int _page = 1;
 
   GlobalKey<CurvedNavigationBarState> bottomNavigationKey = GlobalKey();
 
@@ -31,6 +32,7 @@ class BottomNavBarState extends State<BottomNavBar> {
       const SearchScreen(),
       const CategoryScreen(),
       const UiTaskScreen(),
+      const FilesTaskScreen(),
     ];
     return BlocBuilder<LoginBloc, LoginState>(
       builder: (context, state) {
@@ -52,6 +54,10 @@ class BottomNavBarState extends State<BottomNavBar> {
                     backgroundColor: Color(0xFFf2a493),
                     child:
                         Icon(Icons.home_filled, size: 30, color: Colors.black)),
+                CircleAvatar(
+                    backgroundColor: Color(0xFFf2a493),
+                    child: Icon(Icons.task_rounded,
+                        size: 30, color: Colors.black)),
                 CircleAvatar(
                     backgroundColor: Color(0xFFf2a493),
                     child: Icon(Icons.task_rounded,
